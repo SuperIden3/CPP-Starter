@@ -1,24 +1,20 @@
 {
-  "name": "nodejs-sandbox",
+  "name": "cpp-starter",
   "version": "1.0.0",
-  "description": "",
-  "main": "index.html",
+  "description": "A starter for `c++` code.",
+  "main": "index.cpp",
+  "devDependencies": {},
   "scripts": {
-    "start": "nodemon index.js"
+    "start": "g++ index.cpp -o main\n./main\nrm ./main\n",
+    "update": "yarn install\nsudo apt update\nsudo apt-get install g++\n",
+    "check": "g++ --version\n"
   },
-  "repository": {
-    "type": "git",
-    "url": "git+https://github.com/codesandbox-app/static-template.git"
-  },
-  "keywords": [],
-  "author": "Ives van Hoorne",
-  "license": "MIT",
-  "bugs": {
-    "url": "https://github.com/codesandbox-app/static-template/issues"
-  },
-  "homepage": "https://github.com/codesandbox-app/static-template#readme",
-  "devDependencies": {
-    "nodemon": "^3.0.1"
-  },
-  "dependencies": {}
+  "keywords": [
+    "cpp",
+    "c++",
+    "starter",
+    "template"
+  ],
+  "author": "Chi Zu",
+  "license": "ISC"
 }
